@@ -1,3 +1,7 @@
-const h1 = document.querySelector(".hello:nth-child(2) h1");
+const h1 = document.querySelector(".hello h1");
 
-h1.style.color = "blue";
+function handleH1Click() {
+  alert("h1 was clicked!!");
+}
+
+h1.addEventListener("click", handleH1Click);
