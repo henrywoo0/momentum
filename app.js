@@ -1,3 +1,3 @@
-const title = document.getElementById("title");
+const h1 = document.querySelector(".hello:nth-child(2) h1");
 
-title.innerText = "Hoho!!";
+h1.style.color = "blue";
