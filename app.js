@@ -1,9 +1,4 @@
-const age = 96;
+const age = prompt("How old are you?");
 
-function calculateKrAge(ageOfForeigner) {
-  return ageOfForeigner + 2;
-}
-
-const krAge = calculateKrAge(age);
-
-console.log(krAge);
+console.log(age, parseInt(age));
+// NaN : Not a Number
