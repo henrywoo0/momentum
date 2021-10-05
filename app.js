@@ -1,7 +1,17 @@
 const h1 = document.querySelector(".hello h1");
 
-function handleH1Click() {
-  alert("h1 was clicked!!");
+function handleMouseEnter() {
+  h1.innerText = "Mouse is here!!";
 }
 
-h1.addEventListener("click", handleH1Click);
+function handleMouseLeave() {
+  h1.innerText = "Mouse is gone😂😂";
+}
+
+function handleOnClick() {
+  h1.style.color = "blue";
+}
+
+h1.addEventListener("mouseenter", handleMouseEnter);
+h1.addEventListener("mouseleave", handleMouseLeave);
+h1.onclick = handleOnClick;
